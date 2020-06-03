@@ -1,0 +1,25 @@
+.paginator {
+  max-width: 500px;
+  display: block;
+  list-style: none;
+  padding: 0;
+  display: flex;
+
+  & li {
+    justify-content: center;
+    margin: 0 1px;
+    display: block;
+    padding: .5em 1em;
+    border: 1px solid #999;
+    border-radius: .2em;
+    text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+  }
+  &__active {
+    background-color: #F2C200;
+  }
+}

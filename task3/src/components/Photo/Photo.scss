@@ -1,0 +1,19 @@
+.photo {
+  max-width: 300px;
+  max-height: 300px;
+  position: relative;
+
+  &__del {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    background-image: url('/images/bin.png');
+    
+  }
+}
+.wrapper {
+  position: relative;
+}

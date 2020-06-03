@@ -1,0 +1,39 @@
+.home {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(100, 1fr));
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+  &__img {
+    order: -1;
+  }
+  
+  &__button {
+    padding: 10px;
+    border: none;
+    background-color: #f8db4d;
+    
+    &:focus {
+      outline: none;
+      box-shadow:
+      0 0 0 2px #B3B3B3,
+      0 0 0 2px #B3B3B3;
+    }
+
+    &:hover {
+      background-color: #F2C200;
+    }
+
+    &:disabled {
+      background-color: #F2F2F2;
+      color: #7F7F7F;
+      opacity: .5;
+    }
+  }
+
+  &__button_load {
+    margin-right: 20px;
+  }
+}
