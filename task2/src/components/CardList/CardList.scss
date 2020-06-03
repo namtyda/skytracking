@@ -1,0 +1,15 @@
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  &__item {
+    height: 150px;
+    background-color: #dcdcdc;
+  }
+
+  &__center {
+    margin-bottom: 20px;
+  }
+}

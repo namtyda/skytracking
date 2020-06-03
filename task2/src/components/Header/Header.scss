@@ -1,0 +1,48 @@
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 25px;
+  height: 105px;
+  position: relative;
+
+  &__App {
+    margin-bottom: 40px;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #777777;
+  }
+
+  &__items {
+    background-color: #777777;
+  }
+  &__items_text {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 25px;
+  }
+  &__items-text {
+    text-align: right;
+    max-width: 230px;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__items-link {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
