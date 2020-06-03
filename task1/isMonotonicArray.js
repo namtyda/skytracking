@@ -16,3 +16,6 @@ function isMono(...values) {
 }
 
 console.log(isMono(0, 1, 5, 9, 15)); // true
+console.log(isMono(0, 1, 1, 5, 9, 9, 15)); // true
+console.log(isMono(15, 8, 4, 2, 1)); // true
+console.log(isMono(0, 1, 5, 15, 4)); // false

@@ -3,6 +3,7 @@ function getAnagrams(list) {
 
   for (const word of list) {
     const tmp = [...word].sort().join('');
+    
     if (res[tmp]) {
       res[tmp].push(word)
     } else {

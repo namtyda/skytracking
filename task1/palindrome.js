@@ -6,6 +6,7 @@
 function isPalindrome(value) {
   const normaliseString = value.toLocaleLowerCase().split(' ').join('');
   let left = 0, right = normaliseString.length - 1;
+  
   while (left <= right) {
     if (normaliseString[left] !== normaliseString[right]) return false;
     left++;

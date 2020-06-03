@@ -7,6 +7,7 @@
 function intersection(left, right) {
   const map = {};
   const result = [];
+  
   for (const int of left) {
     if (map[int]) {
       map[int]++;
