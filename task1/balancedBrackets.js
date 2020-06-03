@@ -12,8 +12,10 @@ function isBalanced(input) {
   for (const char of input) {
     if (/[\{]/.test(char)) {
       stack.push(char);
-    } else {
+
+    } else if (/[\}]/.test(char)) {
       const open = stack.pop();
+
       if (!open) return false;
       if (pattern[char] !== open) return false;
     }
